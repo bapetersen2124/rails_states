@@ -1,0 +1,22 @@
+<h1>Top Five States By Population</h1>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Population</th>
+    <th>Area</th>
+  </thead>
+  <tbody>
+    <% @state.each do |state| %>
+    <tr>
+      <td><%= state.id %></td>
+      <td><%= state.name %></td>
+      <td><%= state.capital %></td>
+      <td><%= state.population %></td>
+      <td><%= state.area %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
